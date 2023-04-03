@@ -23,13 +23,13 @@ public class ClientesServiceImpl implements ClientesService {
 	
 	String user="admin";
 	String pwd="admin";
-	String token;
+	String token; 
 	
 	ClientesServiceImpl(RestTemplate template){
 		
 		this.template = template;
 	}
-	
+	 
 	@PostConstruct() //se llama despues de ejecutarse el constructor del controlador
 	public void autenticar()
 	{
